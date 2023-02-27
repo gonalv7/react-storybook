@@ -29,7 +29,12 @@ const Dropdown = ({ options, selectLabel = 'Select a value', onItemSelected }) =
         {expanded && (
           <div className="dropdown__item-container">
             {options.map((option, i) => (
-              <DropdownItem key={i} label={option} onItemClicked={onItemClickedHandler} />
+              <DropdownItem
+                key={i}
+                label={option}
+                containerClassName={'dropdown__item'}
+                onItemClicked={onItemClickedHandler}
+              />
             ))}
           </div>
         )}

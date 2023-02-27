@@ -16,3 +16,7 @@
   overflow-y: auto;
   border: 1px solid black;
 }
+
+.dropdown__item:not(:last-child) {
+  border-bottom: 1px solid black;
+}
